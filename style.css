@@ -1,0 +1,12 @@
+.gradient-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 44, 89, 0.95) 0%,
+    rgba(10, 30, 63, 0.88) 100%
+  );
+}
+.text-gradient {
+  background: linear-gradient(135deg, #f35f1c 0%, #ffa800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
