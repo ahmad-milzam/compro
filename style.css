@@ -199,6 +199,47 @@
   font-size: 1.5rem;
 }
 
+/* ==========================================
+   TOMBOL BOOKMARK SIDEBAR KANAN (DOWNLOAD PDF)
+   ========================================== */
+.pdf-side-bookmark {
+  position: fixed;
+  right: 0;
+  top: 45%; /* Posisi vertikal di tengah-tengah layar (sesuai kotak merah) */
+  transform: translateY(-50%);
+  background: #F97316; /* Warna oranye aksen */
+  color: #FFFFFF !important;
+  padding: 8px 10px;
+  border-radius: 8px 0 0 8px; /* Membulatkan sudut kiri agar menempel rapi */
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+  transition: all 0.3s ease;
+}
+
+.pdf-side-bookmark i {
+  font-size: 1.2rem;
+}
+
+.pdf-side-bookmark span {
+  writing-mode: vertical-rl; /* Membuat teks berjalan secara vertikal dari atas ke bawah */
+  text-orientation: mixed;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pdf-side-bookmark:hover {
+  background: #EA580C;
+  padding-right: 18px; /* Efek bergeser sedikit saat kursor mendekat */
+  box-shadow: -8px 8px 25px rgba(249, 115, 22, 0.6);
+}
+
 /* Responsif untuk Tampilan Mobile & Tablet */
 @media (max-width: 991px) {
   .hero-grid {
@@ -217,5 +258,16 @@
 
   .hero-btns {
     justify-content: center;
+  }
+
+  .pdf-side-bookmark {
+    padding: 8px 8px;
+    top: 55%;
+  }
+  .pdf-side-bookmark i {
+    font-size: 1rem;
+  }
+  .pdf-side-bookmark span {
+    font-size: 0.5rem;
   }
 }
