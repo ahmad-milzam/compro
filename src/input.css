@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "../script.js";
+
+@theme {
+    --color-brand-navy: #0F2C59;
+    --color-brand-darkNavy: #0A1E3F;
+    --color-brand-orange: #F35F1C;
+    --color-brand-orangeHover: #d94e0e;
+    --color-brand-slate: #334155;
+    --color-brand-lightBg: #F8FAFC;
+    --font-sans: Inter, sans-serif;
+}
