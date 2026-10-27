@@ -1,6 +1,7 @@
 {
   "name": "compro",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Company Profile",
   "main": "script.js",
   "scripts": {
@@ -25,3 +26,14 @@
     "tailwindcss": "^4.3.3"
   }
 }
+=======
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./tailwind.input.css -o ./tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./tailwind.input.css -o ./tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
+>>>>>>> 59feb3130fb7c8e5232637fd1cbc59448300c1ee
